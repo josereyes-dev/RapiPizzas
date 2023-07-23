@@ -1,0 +1,79 @@
+.header {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  z-index: 2;
+}
+.header .navbar {
+  display: flex;
+  min-height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.header .navbar .title {
+  color: #000;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+.header .navbar .nav-menu {
+  display: flex;
+  gap: 4rem;
+  margin: 0;
+}
+.header .navbar .nav-menu .nav-item {
+  list-style: none;
+}
+.header .navbar .nav-menu .nav-item .nav-link {
+  color: #000;
+  font-weight: 700;
+  transition: 0.7s ease;
+}
+.header .navbar .nav-menu .nav-item .nav-link:hover {
+  color: #717977;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.separator {
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: var(--bs-border-width) solid;
+  opacity: 0.25;
+}
+
+.carrusel {
+  padding: 8rem 0 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Raleway";
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=styleindex.css.map */
