@@ -1,6 +1,7 @@
 @use "components";
 
 html {
+    min-width: 100vw;
     scroll-behavior: smooth;
 }
 
@@ -11,6 +12,15 @@ html {
     font-family: 'Raleway';
 }
 
-a{
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+a, h2{
     text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+}
+
+i{
+    font-size: 2rem;
 }

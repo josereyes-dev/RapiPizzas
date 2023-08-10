@@ -15,15 +15,15 @@
             color: #000;
             text-decoration: none;
             font-size: 2.5rem;
-            font-weight: 700;
             letter-spacing: 0.1rem;
+            font-family: 'Pacifico', cursive;
         }
 
         .nav-menu{
             display: flex;
             gap: 4rem;
             margin: 0;
-
+            
             .nav-item{
                 list-style: none;
 
@@ -51,7 +51,7 @@
         margin: 5px auto;
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
-        background-color: white;
+        background-color: #000;
     }
 }
 
@@ -64,6 +64,152 @@
 }
 
 .carrusel{
-    padding: 8rem 0 0 ;
+    margin: 0;
+    width: 100%;
+    padding: 8rem 0 0;
+
+}
+
+.container-ofertas{
+    padding: 2rem;
+    .desc-ofertas{
+        .title-sep{
+            overflow: hidden;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .title-sep::after{
+            content: "";
+            display: inline-block;
+            height: 2px;
+            vertical-align: middle;
+            width: 70%;
+            margin-inline: 1rem -90%;
+            background-color: #E9EBEE;
+        }
+    }
+}
+
+.ofertas{
+    width: 100%;
+    padding: 0 3rem 2rem;
+    .menu-cards{
+        display: flex;
+        gap: 2rem;
+        
+        .card{
+            overflow: hidden;
+            width: 18rem;
+
+            img{
+                height: calc(260px / 1.91);
+                transition: transform 0.5s;
+
+            &:hover{
+                transform: scale(1.05);
+                transition: transform 0.3s;
+            }
+        }
+        .btn-buyshop{
+            display: flex;
+            justify-content: center;
+
+        .btn-buy{
+            width: 5rem;
+            align-items: center;
+        }}
+    }
+    }
+}
+.footer-section{
+    .footer{
+        .list-footer{
+
+        padding: 5rem;
+        justify-content: center;
+        text-align: left;
+        background-color: #231F20;
+        display: flex;
+        }
+        .list{
+            padding: 0 2rem;
+
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+            .list-group-item{
+                background-color: #231F20;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1240px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.activate .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.activate .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.activate .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
     
+    .header {
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        gap: 0;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        transition: .5s all ease-out;
+    }
+    .nav-item {
+        margin: 0.2rem 0;
+    }
+
+    .nav-menu.activate {
+        left: 0;
+        right: 0;
+        top: 30px;
+    }
+
+    .ofertas{
+        .menu-cards{
+            justify-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        }
+        
+}
+
+.footer-section{
+    .footer{
+        .list-footer{
+            justify-content: left;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 2rem;
+    }
+}
+}
 }
