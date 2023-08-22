@@ -117,14 +117,14 @@
   background-color: #231F20;
   display: flex;
 }
-.footer-section .footer .list {
+.footer-section .footer .list-footer .list {
   padding: 0 2rem;
 }
-.footer-section .footer .list a {
+.footer-section .footer .list-footer .list a {
   text-decoration: none;
   color: #fff;
 }
-.footer-section .footer .list .list-group-item {
+.footer-section .footer .list-footer .list .list-group-item {
   background-color: #231F20;
   text-decoration: none;
 }
@@ -164,7 +164,7 @@
   .nav-menu.activate {
     left: 0;
     right: 0;
-    top: 30px;
+    top: 110px;
   }
   .ofertas .menu-cards {
     justify-content: center;
