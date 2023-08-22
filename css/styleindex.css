@@ -166,6 +166,9 @@
     right: 0;
     top: 110px;
   }
+  .carrusel .carouselExample .carousel-inner .careousel-item img {
+    width: 200%;
+  }
   .ofertas .menu-cards {
     justify-content: center;
     display: flex;

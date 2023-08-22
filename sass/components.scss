@@ -67,7 +67,6 @@
     margin: 0;
     width: 100%;
     padding: 8rem 0 0;
-
 }
 
 .container-ofertas{
@@ -187,6 +186,18 @@
         right: 0;
         top: 110px;
     }
+
+    .carrusel{
+        .carouselExample{
+            .carousel-inner{
+                .careousel-item{
+                    img{
+                        width: 200%;
+                    }
+                }
+            }
+        }
+    }    
 
     .ofertas{
         .menu-cards{
